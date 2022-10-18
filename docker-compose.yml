@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: react-template
+    build:
+      context: .
+      dockerfile: ./Workspace
+    ports: 
+      - "3001:5173"
