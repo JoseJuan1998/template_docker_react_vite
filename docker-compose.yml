@@ -6,5 +6,6 @@ services:
     build:
       context: .
       dockerfile: ./Workspace
+    command: /bin/sh run.sh
     ports: 
       - "3001:5173"

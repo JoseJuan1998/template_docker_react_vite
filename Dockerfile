@@ -11,8 +11,6 @@ RUN npm install esbuild-linux-arm64
 
 COPY . .
 
-RUN npm run build
+RUN chmod +x ./run.sh
 
-EXPOSE 5173
-
-CMD ["npm", "run", "dev"]
+CMD ["./run.sh"]
